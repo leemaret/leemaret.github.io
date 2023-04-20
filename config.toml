@@ -4,11 +4,6 @@ baseURL = "https://leemaret.github.io"
 theme = "LoveIt"
 
 # website title
-<<<<<<< HEAD
-=======
-
-title = "Lee Maret"
->>>>>>> 6bf24c59b2ee8114f6d0bf26a31422e992120b70
 
 title = "Lee Maret"
 
@@ -26,9 +21,7 @@ enableEmoji = true
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [author]
-  name = "Lee Maret"
-  email = "hi@leemaret.com"
-  link = "leemaret.com"
+  name = "Lee"
 
 [menu]
   [[menu.main]]
@@ -58,21 +51,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [params]
   # site default theme ["auto", "light", "dark"]
-<<<<<<< HEAD
-  defaultTheme = "dark"
-  
-  gitRepo = "https://github.com/leemaret"
-=======
 
   defaultTheme = "dark"
-  # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/dillonzq/LoveIt"
   # which hash function used for SRI, when empty, no SRI is used
-  # ["sha256", "sha384", "sha512", "md5"]
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
   # date format
->>>>>>> 6bf24c59b2ee8114f6d0bf26a31422e992120b70
   dateFormat = "2006-01-02"
 
   # Header config
