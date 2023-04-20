@@ -6,6 +6,7 @@ theme = "LoveIt"
 #themesDir = "../.."
 
 # website title
+
 title = "Lee Maret"
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
@@ -72,6 +73,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [params]
   # site default theme ["auto", "light", "dark"]
+
   defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/dillonzq/LoveIt"
