@@ -6,7 +6,7 @@ theme = "LoveIt"
 #themesDir = "../.."
 
 # website title
-title = "LoveIt"
+title = "Lee Maret"
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
@@ -36,9 +36,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = "xxxx"
-  email = ""
-  link = ""
+  name = "Lee Maret"
+  email = "hi@leemaret.com"
+  link = "leemaret.com"
 
 # Menu config
 [menu]
@@ -72,7 +72,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [params]
   # site default theme ["auto", "light", "dark"]
-  defaultTheme = "auto"
+  defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/dillonzq/LoveIt"
   # which hash function used for SRI, when empty, no SRI is used
