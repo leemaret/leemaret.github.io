@@ -2,66 +2,51 @@ baseURL = "https://leemaret.github.io"
 
 # theme
 theme = "LoveIt"
-# themes directory
-#themesDir = "../.."
 
 # website title
+<<<<<<< HEAD
+=======
+
+title = "Lee Maret"
+>>>>>>> 6bf24c59b2ee8114f6d0bf26a31422e992120b70
 
 title = "Lee Maret"
 
-# determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
-# language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
-# language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
-# whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 
-# default amount of posts in each pages
 paginate = 12
-# google analytics code [UA-XXXXXXXX-X]
-googleAnalytics = ""
-# copyright description used only for seo schema
-copyright = ""
 
-# whether to use robots.txt
 enableRobotsTXT = true
-# whether to use git commit log
 enableGitInfo = true
-# whether to use emoji code
 enableEmoji = true
 
-# ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
-# Author config
 [author]
   name = "Lee Maret"
   email = "hi@leemaret.com"
   link = "leemaret.com"
 
-# Menu config
 [menu]
   [[menu.main]]
     weight = 1
     identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     name = "Posts"
     url = "/posts/"
-    # title will be shown when you hover on this menu link
-    title = ""
+    title = "posts"
   [[menu.main]]
     weight = 2
-    identifier = "tags"
+    identifier = "about"
     pre = ""
     post = ""
-    name = "Tags"
-    url = "/tags/"
-    title = ""
+    name = "About"
+    url = "/about/"
+    title = "about"
   [[menu.main]]
     weight = 3
     identifier = "categories"
@@ -73,6 +58,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [params]
   # site default theme ["auto", "light", "dark"]
+<<<<<<< HEAD
+  defaultTheme = "dark"
+  
+  gitRepo = "https://github.com/leemaret"
+=======
 
   defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
@@ -82,50 +72,29 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
   # date format
+>>>>>>> 6bf24c59b2ee8114f6d0bf26a31422e992120b70
   dateFormat = "2006-01-02"
-  # website title for Open Graph and Twitter Cards
-  title = "LoveIt"
-  # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Hugo theme - LoveIt"
-  # website images for Open Graph and Twitter Cards
-  images = ["/logo.png"]
 
   # Header config
   [params.header]
-    # desktop header mode ["fixed", "normal", "auto"]
     desktopMode = "fixed"
-    # mobile header mode ["fixed", "normal", "auto"]
     mobileMode = "auto"
-    # Header title config
     [params.header.title]
-      # URL of the LOGO
-      logo = ""
-      # title name
-      name = "LoveIt"
-      # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
-      # you can add extra information after the name (HTML format is supported), such as icons
+      name = "Lee Maret"
+      #pre = ""
       post = ""
-      # whether to use typeit animation for title name
       typeit = false
 
   # Footer config
   [params.footer]
     enable = true
-    # Custom content (HTML format is supported)
-    custom = ""
-    # whether to show Hugo and theme info
-    hugo = true
-    # whether to show copyright info
+    hugo = false 
     copyright = true
-    # whether to show the author
     author = true
     # site creation time
-    since = 2019
-    # ICP info only in China (HTML format is supported)
-    icp = ""
+    since = 2022
     # license info (HTML format is supported)
-    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    #license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
   # Section (all posts) page config
   [params.section]
@@ -145,42 +114,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # amount of RSS pages
     rss = 10
 
-  # App icon config
-  [params.app]
-    # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "LoveIt"
-    # whether to omit favicon resource links
-    noFavicon = false
-    # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = ""
-    # Android browser theme color
-    themeColor = "#ffffff"
-    # Safari mask icon color
-    iconColor = "#5bbad5"
-    # Windows v8-11 tile color
-    tileColor = "#da532c"
 
-  # Search config
-  [params.search]
-    enable = true
-    # type of search engine ["lunr", "algolia"]
-    type = "algolia"
-    # max index length of the chunked content
-    contentLength = 4000
-    # placeholder of the search bar
-    placeholder = ""
-    # max number of results length
-    maxResultLength = 10
-    # snippet length of the result
-    snippetLength = 30
-    # HTML tag name of the highlight part in results
-    highlightTag = "em"
-    # whether to use the absolute URL based on the baseURL in search index
-    absoluteURL = false
-    [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
 
   # Home page config
   [params.home]
@@ -189,20 +123,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Home page profile
     [params.home.profile]
       enable = true
-      # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
-      # URL of avatar shown in home page
-      avatarURL = "/images/avatar.png"
-      # title shown in home page (HTML format is supported)
-      title = ""
-      # subtitle shown in home page (HTML format is supported)
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
-      # whether to use typeit animation for subtitle
-      typeit = true
-      # whether to show social links
-      social = true
-      # disclaimer (HTML format is supported)
-      disclaimer = ""
     # Home page posts
     [params.home.posts]
       enable = true
@@ -210,107 +130,24 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       paginate = 6
   # Social config in home page
   [params.social]
-    GitHub = ""
-    Gitlab = ""
-    Email = ""
-    RSS = ""
+    GitHub = "https://github.com/leemaret"
+    Email = "hi@leemaret.com"
+    RSS = "/rss"
 
   # Page global config
   [params.page]
-    # whether to hide a page from home page
-    hiddenFromHomePage = false
-    # whether to hide a page from search results
-    hiddenFromSearch = false
-    # whether to enable twemoji
-    twemoji = false
-    # whether to enable lightgallery
-    lightgallery = false
-    # whether to enable the ruby extended syntax
-    ruby = true
-    # whether to enable the fraction extended syntax
-    fraction = true
-    # whether to enable the fontawesome extended syntax
-    fontawesome = true
-    # whether to show link to Raw Markdown content of the content
-    linkToMarkdown = true
-    # whether to show the full text content in RSS
-    rssFullText = false
-    # Table of the contents config
-    [params.page.toc]
-      # whether to enable the table of the contents
-      enable = true
-      # whether to keep the static table of the contents in front of the post
-      keepStatic = false
-      # whether to make the table of the contents in the sidebar automatically collapsed
-      auto = true
+
     # Code config
     [params.page.code]
       # whether to show the copy button of the code block
       copy = true
       # the maximum number of lines of displayed code by default
       maxShownLines = 50
-    # KaTeX mathematical formulas config (KaTeX https://katex.org/)
-    [params.page.math]
-      enable = false
-      # default inline delimiter is $ ... $ and \( ... \)
-      inlineLeftDelimiter = ""
-      inlineRightDelimiter = ""
-      # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
-      blockLeftDelimiter = ""
-      blockRightDelimiter = ""
-      # KaTeX extension copy_tex
-      copyTex = true
-      # KaTeX extension mhchem
-      mhchem = true
-    # Mapbox GL JS config (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
-    [params.page.mapbox]
-      # access token of Mapbox GL JS
-      accessToken = ""
-      # style for the light theme
-      lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
-      # style for the dark theme
-      darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
-      # whether to add NavigationControl (https://docs.mapbox.com/mapbox-gl-js/api/#navigationcontrol)
-      navigation = true
-      # whether to add GeolocateControl (https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol)
-      geolocate = true
-      # whether to add ScaleControl (https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol)
-      scale = true
-      # whether to add FullscreenControl (https://docs.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
-      fullscreen = true
+
     # Social share links in post page
     [params.page.share]
       enable = false 
-    # Comment config
-    [params.page.comment]
-      enable = true
-      # utterances comment config (https://utteranc.es/)
-      # utterances comment 评论系统设置 (https://utteranc.es/)
-      [params.page.comment.utterances]
-        enable = false
-        # owner/repo
-        repo = ""
-        issueTerm = "pathname"
-        label = ""
-        lightTheme = "github-light"
-        darkTheme = "github-dark"
-    # Third-party library config
-    [params.page.library]
-      [params.page.library.css]
-        # someCSS = "some.css"
-        # someCSS = "https://cdn.example.com/some.css"
-      [params.page.library.js]
-        # someJavascript = "some.js"
-        # located in "assets/" 
-        # someJavascript = "https://cdn.example.com/some.js"
-    # Page SEO config
-    [params.page.seo]
-      # image URL
-      images = []
-      # Publisher info
-      [params.page.seo.publisher]
-        name = "xxxx"
-        logoUrl = "/images/avatar.png"
+
 
   # TypeIt config
   [params.typeit]
@@ -323,20 +160,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     duration = -1
 
-  # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
-  [params.verification]
-    google = ""
-    bing = ""
-    yandex = ""
-    pinterest = ""
-    baidu = ""
 
-  # Site SEO config
-  [params.seo]
-    # image URL
-    image = "/images/Apple-Devices-Preview.png"
-    # thumbnail URL
-    thumbnailUrl = "/images/screenshot.png"
 
   # Analytics config
   [params.analytics]
@@ -395,10 +219,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [markup.goldmark.renderer]
       # whether to use HTML tags directly in the document
       unsafe = true
-  # Table Of Contents settings
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 6
+
 
 # Sitemap config
 [sitemap]
@@ -458,14 +279,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "Posts"
         url = "/posts/"
         title = ""
-      [[languages.en.menu.main]]
-        weight = 2
-        identifier = "tags"
-        pre = ""
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
+      
       [[languages.en.menu.main]]
         weight = 3
         identifier = "categories"
@@ -474,14 +288,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "Categories"
         url = "/categories/"
         title = ""
-      [[languages.en.menu.main]]
-        weight = 4
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
+      
       [[languages.en.menu.main]]
         weight = 5
         identifier = "about"
@@ -496,44 +303,19 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
         post = ""
         name = ""
-        url = "https://github.com/dillonzq/LoveIt"
+        url = "https://github.com/leemaret"
         title = "GitHub"
-    [languages.en.params]
-      [languages.en.params.search]
-        enable = true
-        type = "algolia"
-        contentLength = 4000
-        placeholder = ""
-        maxResultLength = 10
-        snippetLength = 30
-        highlightTag = "em"
-        absoluteURL = false
-        [languages.en.params.search.algolia]
-          index = "index.en"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+   
       [languages.en.params.home]
         rss = 10
         [languages.en.params.home.profile]
           enable = true
-          gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
-          title = ""
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
-          typeit = true
+          avatarURL = "alocasia.png"
+          title = "Lee Maret"
+          subtitle = "software engineer and Linux person"
+          typeit = false 
           social = true
           disclaimer = ""
-      [languages.en.params.social]
-        GitHub = "xxxx"
-        Twitter = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
-        Youtubelegacy = "xxxx"
-        Phone = "555-555-555"
-        Email = "xxxx@xxxx.com"
-        RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
+
+
 
