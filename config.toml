@@ -13,6 +13,7 @@ languageName = "English"
 hasCJKLanguage = false
 
 paginate = 12
+posts = "/posts/lab-log/:year/:month/:title"
 
 enableRobotsTXT = true
 enableGitInfo = true
