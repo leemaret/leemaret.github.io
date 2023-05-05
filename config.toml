@@ -18,10 +18,12 @@ enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
 
+summaryLength = 12
+
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [author]
-  name = "Lee"
+  name = "Lee Maret"
 
 [menu]
   [[menu.main]]
@@ -42,12 +44,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     title = "about"
   [[menu.main]]
     weight = 3
-    identifier = "categories"
+    identifier = "projects"
     pre = ""
     post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
+    name = "Projects"
+    url = "/projects/"
+    title = "projects"
 
 [params]
   # site default theme ["auto", "light", "dark"]
@@ -97,6 +99,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 10
+
+  [params.toc]
+    enable = false
+
+
 
 
 
@@ -266,12 +273,12 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       
       [[languages.en.menu.main]]
         weight = 3
-        identifier = "categories"
+        identifier = "projects"
         pre = ""
         post = ""
-        name = "Categories"
-        url = "/categories/"
-        title = ""
+        name = "Projects"
+        url = "/projects/"
+        title = "projects"
       
       [[languages.en.menu.main]]
         weight = 5
@@ -296,7 +303,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
           enable = true
           avatarURL = "alocasia.png"
           title = "Lee Maret"
-          subtitle = "software engineer and Linux person"
+          subtitle = "software developer and industrial designer"
           typeit = false 
           social = true
           disclaimer = ""
