@@ -9,7 +9,7 @@ Usually in the contexts I care about (as the admin of some computers and devices
 
 ## Project goals
 
-I have a hypervisor on which I run several virtual machines and containers. Each instance has a number of applications, some installed and some I've created myself, from which I'd like to capture some metrics as they run. With these metrics I'd like to build a dashboard or several I can serve from a web instance available within my network, so I can click a link and see how all my stuff is doing with a nice visual interface.
+I have a hypervisor on which I run several virtual machines and containers. Each instance has a number of applications, some installed and some I've created myself, from which I'd like to capture some metrics as they run. With these metrics I'd like to build a dashboard or several I can serve from a web instance available within my network, so I can click a link and see how everything is doing with a nice visual interface.
 
 ## Not goals
 
@@ -21,7 +21,7 @@ The most critical component of a dashboard is actually the log forwarder. The re
 
 ### data sources
 
-For the type of dashboard I am building, the data source is probably not going to be the data used by the application(s) you're monitoring. Usually you want metrics from the application itself, which may or may not have their own database separate from the application. If not, no biggie, it's all going to another database before querying anyway. In this case I know I'll want to capture performance data for a postgreSQL instance. I'd also like to add metric endpoints in any applications I write and test them against this system. 
+For the type of dashboard I am building, the data source is probably not going to be the data used by the application(s) being monitored. Usually you want metrics from the application itself, which may or may not have their own database separate from the application. If not, no biggie, it's all going to another database before querying anyway. In this case I know I'll want to capture performance data for a postgreSQL instance. I'd also like to add metric endpoints in any applications I write and test them against this system. 
 
 ### time-series database
 
