@@ -44,3 +44,20 @@ I installed Grafana first using the [binary install process](https://grafana.com
 
 [Grafana docs page on starting the Grafana server.](https://grafana.com/docs/grafana/latest/setup-grafana/start-restart-grafana/)
 
+The APT release includes a unit file, and the instructions linked above include standard systemctl start and control functions. The default unit file serves the application over port 3000. In my case, because I am deploying this to a virtual machine on my hypervisor in the private network, I added a DNS resolution host override record to Pfsense so I could reach the Grafana instance from my local without typing in the ip address. Because I installed to Ubuntu, port 3000 was already open. The linked instructions include how to alter the unit file if you wish to run on a port lower than 1024. 
+
+When the Grafana service is successfully running and you can reach the host and port, you should be able to login at `host:3000` with the username and password `admin`. On login, you will be required to update the password before progressing.
+
+## configure Grafana security
+
+[Grafana docs on configuring security.](https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/)
+
+This is going to be an evolving section as I add data sources.
+
+The page linked above has a number of default settings that should probably be changed depending on whatever one is trying to do. For example, users with the Viewer role can make any query to any data source in the organization, regardless of the queries defined in the panel. You probably don't want this! The linked documentation provides some examples for how to address. 
+
+### about Grafana configuration
+
+[Grafana docs on configuration.](https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/)
+
+Grafana uses .ini files and environment variables for configuration. The .ini file that is being used for the running instance is displayed by `systemctl status grafana-server.status`; on Linux the default is at `/etc/grafana/grafana.ini`.
